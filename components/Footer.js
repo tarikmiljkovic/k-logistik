@@ -12,7 +12,7 @@ import {
 } from "theme-ui";
 
 import { useContext, setState } from "react";
-import { MainContext } from "../../contexts/MainContext";
+import { MainContext } from "../contexts/MainContext";
 
 export default function Footer() {
 

@@ -24,10 +24,10 @@ import {
 } from "theme-ui";
 
 
-import HeadPage from "../src/components/HeadPage";
-import Footer from "../src/components/Footer";
-import Feature from '../src/components/Feature'
-import Service from "../src/components/Service";
+import HeadPage from "../components/HeadPage";
+import Footer from "../components/Footer";
+import Feature from '../components/Feature'
+import Service from "../components/Service";
 
 export default function Home() {
   return (

@@ -6,7 +6,7 @@ import Link from 'next/link'
 // import Image from 'next/image'
 import React from "react";
 import { useContext } from "react";
-import { MainContext } from "../../contexts/MainContext";
+import { MainContext } from "../contexts/MainContext";
 
 import {
   Container,
@@ -16,7 +16,7 @@ import {
   // Link,
   MenuButton,
 } from "theme-ui";
-import Logo from './logo'
+import Logo from './Logo'
 
 export default function Nav() {
 
