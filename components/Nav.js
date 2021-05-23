@@ -83,7 +83,7 @@ export default function Nav() {
                   </a>
                 </ThemeLink>
               </Link>
-              <Link href="kontakt">
+              <Link href="/kontakt">
                 <ThemeLink
                   sx={{
                     variant: "styles.headnavlink",
