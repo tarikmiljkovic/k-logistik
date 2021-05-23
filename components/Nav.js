@@ -13,7 +13,6 @@ import {
   Link as ThemeLink,
   Box,
   Image,
-  // Link,
   MenuButton,
 } from "theme-ui";
 import Logo from './Logo'
@@ -69,34 +68,28 @@ export default function Nav() {
         /> */}
               <Link href="/kontakt">
                 <ThemeLink
+                  onClick={() => {
+                    props.setPrimaryNav(false);
+                  }}
                   sx={{
                     variant: "styles.headnavlink",
                     color: `${props.primaryNav == true ? "white" : "black"}`,
                   }}
                 >
-                  <a
-                    onClick={() => {
-                      props.setPrimaryNav(false);
-                    }}
-                  >
-                    Das Unternehmen
-                  </a>
+                  Das Unternehmen
                 </ThemeLink>
               </Link>
               <Link href="/kontakt">
                 <ThemeLink
+                  onClick={() => {
+                    props.setPrimaryNav(false);
+                  }}
                   sx={{
                     variant: "styles.headnavlink",
                     color: `${props.primaryNav == true ? "white" : "black"}`,
                   }}
                 >
-                  <a
-                    onClick={() => {
-                      props.setPrimaryNav(false);
-                    }}
-                  >
-                    Kontakt
-                  </a>
+                  Kontakt
                 </ThemeLink>
               </Link>
             </header>
