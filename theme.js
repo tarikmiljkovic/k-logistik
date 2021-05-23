@@ -96,20 +96,8 @@ const theme = {
     h1: {
       fontWeight: 400,
     },
-    // header: {
-    //   marginLeft: "0",
-    //   marginRight: "auto",
-    //   "@media screen and (max-width: 40em)": {
-    //     // display: "none",
-    //     display: "flex",
-    //     flexDirection: "row",
 
-    //     flexWrap: "wrap",
-    //     flex: "1",
-    //   },
-    // },
     headnavlink: {
-      // backgroundColor: "#3a4a4a",
       color: "#ffffff",
       alignSelf: "center",
       ml: [0,3,3],
@@ -130,6 +118,5 @@ const theme = {
   },
 };
 
-console.log(theme);
 
 export default theme;
