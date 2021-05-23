@@ -71,7 +71,7 @@ export default function Nav() {
                 <ThemeLink
                   sx={{
                     variant: "styles.headnavlink",
-                    color: `${props.primaryNav ? "white" : "black"}`,
+                    color: `${props.primaryNav == true ? "white" : "black"}`,
                   }}
                 >
                   <a
@@ -87,7 +87,7 @@ export default function Nav() {
                 <ThemeLink
                   sx={{
                     variant: "styles.headnavlink",
-                    color: `${props.primaryNav ? "white" : "black"}`,
+                    color: `${props.primaryNav == true ? "white" : "black"}`,
                   }}
                 >
                   <a
