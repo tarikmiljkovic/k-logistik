@@ -24,7 +24,7 @@ import {
 } from "theme-ui";
 
 
-import HeadPage from "../src/components/headpage";
+import HeadPage from "../src/components/headPage";
 import Footer from "../src/components/footer";
 import Feature from '../src/components/feature'
 import Service from "../src/components/service";
