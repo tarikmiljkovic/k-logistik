@@ -2,7 +2,7 @@
 
 import { ThemeProvider } from "theme-ui";
 import theme from "../theme";
-import Nav from '../components/Nav'
+// import Nav from '../components/Nav'
 import { MainProvider } from "../contexts/MainContext";
 
 export default function App({ Component, pageProps }) {

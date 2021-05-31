@@ -30,16 +30,16 @@ export default function HeadPage() {
     <Box
       sx={{
         height: "100vh",
+
         mb: 60,
         position: "relative",
         verticalAlign: "middle",
-        backgroundImage: "url(static/kamion.jpg)",
+        backgroundImage: "url(static/maci.jpg)",
         objectFit: "cover",
         objectPosition: "top center",
         backgroundRepeat: "no-repeat",
         backgroundPosition: "center",
         // backgroundAttachment: "fixed",
-
       }}
     >
       <Box
@@ -51,7 +51,7 @@ export default function HeadPage() {
           width: "100%",
           verticalAlign: "middle",
           background:
-            "linear-gradient(to top, rgba(0, 0, 0, 0.85), transparent)",
+            "linear-gradient(to top, rgba(11, 61, 145, 0.75), transparent)",
 
           objectFit: "cover",
           objectPosition: "top center",
@@ -72,20 +72,31 @@ export default function HeadPage() {
               fontSize: 38,
               letterSpacing: -1,
               wordWrap: "break-word",
-              pt: 100,
-              pb: 3,
+              mt: 100,
+              mb: 3,
+              backgroundColor: "#0B3D91",
+              p: 3,
+              display: "inline-block",
             }}
           >
-            Dank der detalierten Sendungsverfolgung
+            Transport im Bayern
           </Heading>
 
           <Paragraph
             variant="subheading"
-            sx={{ pb: 3, width: ["auto", "70%"] }}
+            sx={{
+              pb: 3,
+              width: ["auto", "70%"],
+              backgroundColor: "#0B3D91",
+              p: 3,
+            }}
           >
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum
-            exercitationem minima aspernatur perspiciatis ad odit, explicabo
-            corporis quisquam eius praesentium corrupti.
+            Wir agieren über die Grenzen Bayerns und Deutschlands hinaus, sind
+            auch in Europa vielseitiger Komplettanbieter für Transport und Logistik.
+            {/* Durch diese Vielfalt, gepaart mit der
+            Erfahrung in unserem mittelständischen Familienunternehmen, bieten
+            wir unseren Kunden wahre Mehrwerte wie Flexibilität, Zuverlässigkeit
+            und Sicherheit. */}
           </Paragraph>
           <Button>Weiter Informationen</Button>
         </Container>

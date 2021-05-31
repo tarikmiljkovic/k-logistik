@@ -6,17 +6,21 @@ const MainContext = createContext();
 const MainProvider = ({ children }) => {
 
   let [primaryNav, setPrimaryNav] = useState(true);
+  let [siteObject, setSiteObject] = useState({});
 
   return (
     <MainContext.Provider
       value={{
         primaryNav,
-        setPrimaryNav
+        setPrimaryNav,
+        siteObject,
+        setSiteObject,
       }}
     >
       {children}
     </MainContext.Provider>
   );
 };
+
 
 export { MainProvider, MainContext };

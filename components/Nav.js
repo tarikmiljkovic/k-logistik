@@ -66,7 +66,7 @@ export default function Nav() {
           aria-label="Toggle Menu"
           sx={{ color: "white", alignSelf: "center" }}
         /> */}
-              <Link href="/kontakt">
+              <Link href="/unternehmen">
                 <ThemeLink
                   onClick={() => {
                     props.setPrimaryNav(false);

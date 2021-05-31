@@ -1,4 +1,5 @@
 import { base } from "@theme-ui/presets";
+
 const theme = {
   ...base,
 
@@ -17,9 +18,11 @@ const theme = {
   },
 
   text: {
-    heading: {
-      // letterSpacing: -0.5
-    },
+    wordWrap: "break-word",
+    // heading: {
+    //   color: 'red',
+    //   wordWrap: "break-word",
+    // },
     block: {},
 
     caps: {
@@ -30,12 +33,6 @@ const theme = {
       pb: 10,
     },
 
-    heading: {
-      fontFamily: "heading",
-      fontWeight: "heading",
-      lineHeight: "heading",
-      fontWeight: 600,
-    },
     subheading: {
       fontWeight: 300,
     },
@@ -93,18 +90,38 @@ const theme = {
 
   styles: {
     ...base.styles,
-    h1: {
-      fontWeight: 400,
+
+    text: {
+      postheading: {
+        fontFamily: "heading",
+        fontSize: "heading",
+        fontWeight: "heading",
+        lineHeight: "heading",
+        padding: 0,
+        my: 0,
+        wordWrap: "break-word",
+      },
+      postsubheading: {
+        fontFamily: "heading",
+        fontWeight: "heading",
+        lineHeight: "heading",
+        padding: 0,
+        my: 3,
+        wordWrap: "break-word",
+      },
+      textbody: {
+        mb: 4,
+      },
     },
 
     headnavlink: {
       color: "#ffffff",
       alignSelf: "center",
-      ml: [0,3,3],
+      ml: [0, 3, 3],
       width: ["100%", "auto", "auto"],
       "&:hover": {
         cursor: "pointer",
-        textDecoration: 'underline'
+        textDecoration: "underline",
       },
     },
 
