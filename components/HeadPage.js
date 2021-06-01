@@ -25,6 +25,8 @@ import {
 
 import Nav from "./Nav";
 
+// backgroundImage: "url(" + `${require("./path-to-the-image")}` + ")",
+
 export default function HeadPage() {
   return (
     <Box
@@ -34,7 +36,7 @@ export default function HeadPage() {
         mb: 60,
         position: "relative",
         verticalAlign: "middle",
-        backgroundImage: "url(static/maci.jpg)",
+        backgroundImage: `url(${"static/maci.jpg"})`,
         objectFit: "cover",
         objectPosition: "top center",
         backgroundRepeat: "no-repeat",
@@ -92,7 +94,8 @@ export default function HeadPage() {
             }}
           >
             Wir agieren über die Grenzen Bayerns und Deutschlands hinaus, sind
-            auch in Europa vielseitiger Komplettanbieter für Transport und Logistik.
+            auch in Europa vielseitiger Komplettanbieter für Transport und
+            Logistik.
             {/* Durch diese Vielfalt, gepaart mit der
             Erfahrung in unserem mittelständischen Familienunternehmen, bieten
             wir unseren Kunden wahre Mehrwerte wie Flexibilität, Zuverlässigkeit
