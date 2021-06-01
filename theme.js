@@ -5,7 +5,14 @@ const theme = {
 
   colors: {
     ...base.colors,
+    text: "#0B3D91",
+    background: "#fff",
+    primary: "#0B3D91",
+    secondary: "#05a",
+    accent: "#609",
+    muted: "#f6f6f6",
   },
+
   breakpoints: ["40em", "52em", "64em"],
   space: [0, 4, 8, 16, 32, 64, 128, 256, 512],
 
@@ -19,10 +26,6 @@ const theme = {
 
   text: {
     wordWrap: "break-word",
-    // heading: {
-    //   color: 'red',
-    //   wordWrap: "break-word",
-    // },
     block: {},
 
     caps: {
@@ -37,7 +40,6 @@ const theme = {
       fontWeight: 300,
     },
   },
-
   header: {
     backgroundColor: "#3a4a4a",
     background: "#3a4a4a",
@@ -88,8 +90,28 @@ const theme = {
     },
   },
 
+  links: {
+    primary: {
+      // color: primary,
+      // color: "#0B3D91",
+      "&:hover": {
+        cursor: "pointer",
+      },
+    },
+  },
+
   styles: {
     ...base.styles,
+
+    // links: {
+    //   color: colors.primary,
+    //   primary: {
+    //     color: colors.primary,
+    //   },
+    // },
+    // a: {
+    //   color: colors.primary,
+    // },
 
     text: {
       postheading: {
@@ -134,6 +156,5 @@ const theme = {
     },
   },
 };
-
 
 export default theme;

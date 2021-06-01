@@ -163,7 +163,7 @@ var services = [
 ];
 
 
-export default function Service() {
+export default function Service({posts}) {
 
   let { primaryNav, setPrimaryNav } = useContext(MainContext);
 
@@ -193,7 +193,7 @@ export default function Service() {
         {services.map((service) => (
           <Card
             sx={{
-              maxWidth: '100%',
+              maxWidth: "100%",
               backgroundColor: "#EAEBEC",
               padding: "1rem",
             }}
@@ -203,15 +203,13 @@ export default function Service() {
                 height: "100px",
               }}
             >
-
               {service.icon}
-
             </div>
             <h3
               sx={{
                 margin: 0,
                 padding: 0,
-                fontSize: '1em',
+                fontSize: "1em",
               }}
             >
               {service.name}
@@ -220,85 +218,7 @@ export default function Service() {
             <Text>{service.desc}</Text>
           </Card>
         ))}
-
-        {/* { posts.map(post => { return (
-        <Card key={post.path} bg="muted" sx={{ overflow: "hidden" }}>
-          <Box sx={{ px: [15, 30], py: [30, 30] }}>
-            <Heading as="h3" variant="bottom">
-              {post.title}
-            </Heading>
-            <Paragraph variant="bottom">{post.description}</Paragraph>
-            <Text variant="bottom">
-              <Link href={post.path}>
-                <a
-                  onClick={() => {
-                    setPrimaryNav(false);
-                  }}
-                >
-                  <Button
-                    sx={{ mb: 10 }}
-                    variant="secondary"
-                    onClick={() => {
-                      setPrimaryNav(false);
-                    }}
-                  >
-                    {post.desc}
-                  </Button>
-                </a>
-              </Link>
-            </Text>
-          </Box>
-
-          <Box sx={{ height: "200px", width: "100%" }}>
-            <Image
-              sx={{
-                display: "block",
-                maxHeight: "100%",
-                height: "auto",
-                width: "100%",
-                objectFit: "cover",
-              }}
-              src="static/munchen.jpg"
-            />
-          </Box>
-        </Card>
-      );
-
-      })} */}
-
-        {/* <Card bg="muted" sx={{ overflow: "hidden" }}>
-        <Box sx={{ px: [15, 30], py: [30, 30] }}>
-          <Heading as="h3" variant="bottom">
-            Bieten Sie Ihren Kunden bequeme Lieferoptionen.
-          </Heading>
-          <Paragraph variant="bottom">
-            Stellen Sie günstig gelegene Zustellorte zur Verfügung, um Ihre
-            Umsätze zu steigern.
-          </Paragraph>
-          <Text variant="bottom">
-            <Link href="#">
-              <a>
-                <Button sx={{ mb: 10 }} variant="secondary">
-                  Beep
-                </Button>
-              </a>
-            </Link>
-          </Text>
-        </Box>
-
-        <Box sx={{ height: "200px", width: "100%" }}>
-          <Image
-            src="/static/kran.jpg"
-            sx={{
-              display: "block",
-              maxHeight: "100%",
-              height: "auto",
-              width: "100%",
-              objectFit: "cover",
-            }}
-          />
-        </Box>
-      </Card> */}
       </Grid>
+
     </div>
   );}

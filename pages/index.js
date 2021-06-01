@@ -32,7 +32,8 @@ import {
 
 import HeadPage from "../components/HeadPage";
 import Footer from "../components/Footer";
-import Feature from '../components/Feature'
+import Feature from '../components/Feature';
+import News from "../components/News";
 import Service from "../components/Service";
 
 export default function Home({ posts }) {
@@ -47,6 +48,7 @@ export default function Home({ posts }) {
       <HeadPage />
       <Container px={4}>
         <Feature />
+        <News posts={posts} />
         <Service posts={posts} />
         <Footer />
       </Container>
@@ -86,6 +88,7 @@ export async function getStaticProps() {
       path: `/posts/${file.filename.replace(".mdx", "")}`,
       title: file.matter.data.title,
       desc: file.matter.data.desc,
+      image: file.matter.data.image,
     };
   });
 
