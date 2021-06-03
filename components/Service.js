@@ -180,7 +180,7 @@ export default function Service({leistungen}) {
       <h2>Services</h2>
 
       <Grid
-        gap={3}
+        gap={4}
         sx={{
           gridTemplateColumns: [
             "1fr", // default to a stacked layout on small screens

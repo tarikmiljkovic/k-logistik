@@ -43,7 +43,7 @@ export default function Kontakt() {
   return (
     <Box>
       <Nav />
-      <Container sx={{ px: [3,4,4]}}>
+      <Container sx={{ px: [4,4,4]}}>
         {/* <h1 sx={{ variant: "styles.text.postheading" }}>Das Unternehmen</h1> */}
         <h2
           sx={{

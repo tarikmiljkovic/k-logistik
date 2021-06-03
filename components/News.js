@@ -70,7 +70,7 @@ export default function News({ leistungen }) {
       <h2>Neuigkeiten</h2>
 
       <Grid
-        gap={3}
+        gap={4}
         sx={{
 
           gridTemplateColumns: [

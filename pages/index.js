@@ -54,7 +54,7 @@ export default function Home({ leistungen }) {
         <title>Karajic</title>
       </Head>
       <HeroPage />
-      <Container sx={{ px: [3,4,4]}}>
+      <Container sx={{ px: [4,4,4]}}>
         <Feature />
         <News leistungen={leistungen} />
         <Service leistungen={leistungen} />

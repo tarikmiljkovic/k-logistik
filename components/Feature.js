@@ -28,7 +28,7 @@ export default function Feature() {
     <Grid
       gap={4}
       py={[4,16,32]}
-      px={[2, 0]}
+      px={[0, 0]}
       columns={([2, "1fr 1fr"], [1, "1fr 1fr"])}
     >
       <Box bg="primary">
