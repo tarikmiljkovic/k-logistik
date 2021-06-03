@@ -61,22 +61,31 @@ export default function Kontakt() {
         </h2>
         <Text sx={{ variant: "styles.text.textbody" }}>
           Freisinger Landstrassse Munchen
-          <div>
+
             tel:{" "}
-            <Link href="tel:">
-              <a sx={{ variant: "styles.navlink" }}>+496705558220</a>
+            <Link href="">
+              <a href="tel:+4915203468634" sx={{ variant: "styles.navlink" }}>
+                +4915203468634
+              </a>
             </Link>
-          </div>
+
           <div>
             fax:{" "}
             <Link href="">
-              <a sx={{ variant: "styles.navlink" }}>+496705558220</a>
+              <a href="tel:+4915203468634" sx={{ variant: "styles.navlink" }}>
+                +4915203468634
+              </a>
             </Link>
           </div>
           <div>
             mail:{" "}
-            <Link href="mailto:izet@karajic.de">
-              <a sx={{ variant: "styles.navlink" }}>izet@karajic.de</a>
+            <Link href="">
+              <a
+                href="mailto:info@karajic.de"
+                sx={{ variant: "styles.navlink" }}
+              >
+                izet@karajic.de
+              </a>
             </Link>
           </div>
         </Text>

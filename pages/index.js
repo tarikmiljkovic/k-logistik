@@ -52,9 +52,7 @@ export default function Home({ leistungen }) {
 
   return (
     <>
-      <Head>
-        <title>Karajic</title>
-      </Head>
+
 
 
 
