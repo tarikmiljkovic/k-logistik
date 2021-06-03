@@ -60,9 +60,12 @@ export default function Kontakt() {
           Hier haben Sie möglichkeit uns zu erreichen.
         </h2>
         <Text sx={{ variant: "styles.text.textbody" }}>
-          Freisinger Landstrassse Munchen tel:{" "}
+          Habichtring 29 <br />
+          84539 Ampfing <br />
+          Deutschland <br />
+          <br />
           <div>
-            tel:{' '}
+            tel:{" "}
             <Link href="tel:+4915203468634">
               <a href="tel:+4915203468634" sx={{ variant: "styles.navlink" }}>
                 +4915203468634
@@ -70,7 +73,7 @@ export default function Kontakt() {
             </Link>
           </div>
           <div>
-            fax:{' '}
+            fax:{" "}
             <Link href="tel:+4915203468634">
               <a href="tel:+4915203468634" sx={{ variant: "styles.navlink" }}>
                 +4915203468634
@@ -78,7 +81,7 @@ export default function Kontakt() {
             </Link>
           </div>
           <div>
-            mail:{' '}
+            mail:{" "}
             <Link href="mailto:info@karajic.de">
               <a
                 href="mailto:info@karajic.de"
