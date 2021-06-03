@@ -13,7 +13,7 @@ const mdxEnhanced = require("next-mdx-enhanced");
 
 const imagePlugin = withImages();
 const mdxPlugin = mdxEnhanced({
-  layoutPath: "./pages/templates",
+  layoutPath: "./src/templates",
 });
 
 module.exports = composePlugins([imagePlugin, mdxPlugin]);
