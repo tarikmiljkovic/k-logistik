@@ -27,7 +27,7 @@ export default function Feature() {
   return (
     <Grid
       gap={4}
-      pb={50}
+      py={[4,16,32]}
       px={[2, 0]}
       columns={([2, "1fr 1fr"], [1, "1fr 1fr"])}
     >

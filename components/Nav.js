@@ -26,7 +26,7 @@ export default function Nav() {
     <MainContext.Consumer>
       {(props) => (
         <div>
-          <Container sx={{ pt: [4, 4, 4] }}>
+          <Container sx={{ p: [4, 4, 4] }}>
             <header
               sx={{
                 background: "transparent",

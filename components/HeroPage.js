@@ -32,7 +32,7 @@ export default function HeroPage() {
     <Box
       sx={{
         height: "100vh",
-        mb: 60,
+        mb: 0,
         position: "relative",
         verticalAlign: "middle",
         backgroundImage: `url(${"static/maci.JPG"})`,
@@ -65,8 +65,8 @@ export default function HeroPage() {
           <Close ml="auto" mr={-2} />
         </Alert> */}
 
+        <Nav/>
         <Container sx={{ color: "white", px: [3, 4, 4] }}>
-          <Nav />
           <Heading
             as="h1"
             sx={{
@@ -88,7 +88,7 @@ export default function HeroPage() {
             sx={{
               pb: 3,
               width: ["auto", "70%"],
-              backgroundColor: "#0B2867",
+              // backgroundColor: "#0B2867",
               py: 3,
             }}
           >
