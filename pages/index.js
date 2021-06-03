@@ -51,10 +51,10 @@ export default function Home({ leistungen }) {
   return (
     <Box>
       <Head>
-        <title>Next.js Blog Example with</title>
+        <title>Karajic</title>
       </Head>
       <HeroPage />
-      <Container px={4}>
+      <Container sx={{ px: [3,4,4]}}>
         <Feature />
         <News leistungen={leistungen} />
         <Service leistungen={leistungen} />

@@ -26,7 +26,7 @@ export default function Nav() {
     <MainContext.Consumer>
       {(props) => (
         <div>
-          <Container p={4}>
+          <Container sx={{ pt: [4, 4, 4] }}>
             <header
               sx={{
                 background: "transparent",
@@ -39,7 +39,7 @@ export default function Nav() {
               <div
                 sx={{
                   // variant: "styles.headnavlink",
-                  p: 2,
+                  p: 0,
                 }}
               >
                 <Box sx={{}}>
@@ -51,7 +51,7 @@ export default function Nav() {
                     >
                       <Image
                         src={`${
-                          primaryNav == true ? `/logo-white.svg` : `/logo.svg`
+                          primaryNav == true ? `/logo.svg` : `/logo.svg`
                         }`}
                         variant="avatar"
                         sx={{ height: ["60px", "60px", "60px"] }}

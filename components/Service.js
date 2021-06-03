@@ -68,8 +68,8 @@ var services = [
     icon: (
       <MdAccessTime
         sx={{
-          color: "#0B3D91",
-          fill: "#0B3D91",
+          color: "#0B2867",
+          fill: "#0B2867",
           width: "100%",
           height: "100%",
         }}
@@ -82,8 +82,8 @@ var services = [
     icon: (
       <MdImportExport
         sx={{
-          color: "#0B3D91",
-          fill: "#0B3D91",
+          color: "#0B2867",
+          fill: "#0B2867",
           width: "100%",
           height: "100%",
         }}
@@ -96,8 +96,8 @@ var services = [
     icon: (
       <MdDoneAll
         sx={{
-          color: "#0B3D91",
-          fill: "#0B3D91",
+          color: "#0B2867",
+          fill: "#0B2867",
           width: "100%",
           height: "100%",
         }}
@@ -110,8 +110,8 @@ var services = [
     icon: (
       <MdLock
         sx={{
-          color: "#0B3D91",
-          fill: "#0B3D91",
+          color: "#0B2867",
+          fill: "#0B2867",
           width: "100%",
           height: "100%",
         }}
@@ -138,8 +138,8 @@ var services = [
     icon: (
       <MdLayers
         sx={{
-          color: "#0B3D91",
-          fill: "#0B3D91",
+          color: "#0B2867",
+          fill: "#0B2867",
           width: "100%",
           height: "100%",
         }}
@@ -152,8 +152,8 @@ var services = [
     icon: (
       <MdAllInclusive
         sx={{
-          color: "#0B3D91",
-          fill: "#0B3D91",
+          color: "#0B2867",
+          fill: "#0B2867",
           width: "100%",
           height: "100%",
         }}
@@ -196,7 +196,7 @@ export default function Service({leistungen}) {
             sx={{
               maxWidth: "100%",
               backgroundColor: "#EAEBEC",
-              padding: "1rem",
+              padding: "2rem",
             }}
           >
             <div

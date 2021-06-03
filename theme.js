@@ -19,6 +19,7 @@ const theme = {
   layout: {
     container: {
       maxWidth: "1170px",
+
       m: 0,
       mx: "auto",
     },

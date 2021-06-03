@@ -72,6 +72,7 @@ export default function News({ leistungen }) {
       <Grid
         gap={3}
         sx={{
+
           gridTemplateColumns: [
             "1fr", // small
             "1fr 1fr", // medium
@@ -116,8 +117,6 @@ export default function News({ leistungen }) {
             </Card>
           );
         })}
-
-
       </Grid>
     </div>
   );

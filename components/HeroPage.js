@@ -32,7 +32,6 @@ export default function HeroPage() {
     <Box
       sx={{
         height: "100vh",
-
         mb: 60,
         position: "relative",
         verticalAlign: "middle",
@@ -41,6 +40,7 @@ export default function HeroPage() {
         objectPosition: "top center",
         backgroundRepeat: "no-repeat",
         backgroundPosition: "center",
+
         // backgroundAttachment: "fixed",
       }}
     >
@@ -53,8 +53,7 @@ export default function HeroPage() {
           width: "100%",
           verticalAlign: "middle",
           background:
-            "linear-gradient(to top, rgba(11, 61, 145, 0.75), transparent)",
-
+            "linear-gradient(to top, rgba(0, 0, 0, 0.75), transparent)",
           objectFit: "cover",
           objectPosition: "top center",
         }}
@@ -65,9 +64,9 @@ export default function HeroPage() {
           Beep boop, this is an alert!
           <Close ml="auto" mr={-2} />
         </Alert> */}
-        <Nav />
 
-        <Container p={4} sx={{ color: "white" }}>
+        <Container sx={{ color: "white", px: [3, 4, 4] }}>
+          <Nav />
           <Heading
             as="h1"
             sx={{
@@ -76,8 +75,8 @@ export default function HeroPage() {
               wordWrap: "break-word",
               mt: 100,
               mb: 3,
-              backgroundColor: "#0B3D91",
-              p: 3,
+              backgroundColor: "#0B2867",
+              py: 3,
               display: "inline-block",
             }}
           >
@@ -89,8 +88,8 @@ export default function HeroPage() {
             sx={{
               pb: 3,
               width: ["auto", "70%"],
-              backgroundColor: "#0B3D91",
-              p: 3,
+              backgroundColor: "#0B2867",
+              py: 3,
             }}
           >
             Wir agieren über die Grenzen Bayerns und Deutschlands hinaus, sind
