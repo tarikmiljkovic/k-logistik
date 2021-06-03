@@ -5,10 +5,10 @@ const theme = {
 
   colors: {
     ...base.colors,
-    text: "#0B3D91",
+    text: "#0B2867",
     background: "#fff",
-    primary: "#0B3D91",
-    secondary: "#05a",
+    primary: "#0B2867",
+    secondary: "#0B2867",
     accent: "#609",
     muted: "#f6f6f6",
   },
@@ -42,8 +42,11 @@ const theme = {
   },
   header: {
     backgroundColor: "#3a4a4a",
-    background: "#3a4a4a",
-    color: "#fefefe",
+    // 0B2867
+    background: "#0B2867",
+    color: "#0B2867",
+    // background: "#3a4a4a",
+    // color: "red",
     marginLeft: "0",
     marginRight: "auto",
   },
@@ -92,8 +95,6 @@ const theme = {
 
   links: {
     primary: {
-      // color: primary,
-      // color: "#0B3D91",
       "&:hover": {
         cursor: "pointer",
       },
@@ -102,16 +103,6 @@ const theme = {
 
   styles: {
     ...base.styles,
-
-    // links: {
-    //   color: colors.primary,
-    //   primary: {
-    //     color: colors.primary,
-    //   },
-    // },
-    // a: {
-    //   color: colors.primary,
-    // },
 
     text: {
       postheading: {

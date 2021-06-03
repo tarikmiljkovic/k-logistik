@@ -54,7 +54,7 @@ export default function Nav() {
                           primaryNav == true ? `/logo-white.svg` : `/logo.svg`
                         }`}
                         variant="avatar"
-                        sx={{ height: ["30px", "30px", "30px"] }}
+                        sx={{ height: ["60px", "60px", "60px"] }}
                       />
                     </a>
                   </Link>
