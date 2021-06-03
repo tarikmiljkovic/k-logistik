@@ -73,7 +73,7 @@ export default function HeroPage() {
               fontSize: 36,
               letterSpacing: -1,
               wordWrap: "break-word",
-              mt: 100,
+              mt: [100,200],
 
               backgroundColor: "#0B2867",
               p: 2,

@@ -43,8 +43,18 @@ export default function Kontakt() {
   return (
     <Box>
       <Nav />
-      <Container sx={{ px: [4,4,4]}}>
-        {/* <h1 sx={{ variant: "styles.text.postheading" }}>Das Unternehmen</h1> */}
+      <Container sx={{ px: [4, 4, 4] }}>
+        <h1 sx={{ variant: "styles.text.postheading" }}>Mehr über uns</h1>
+        <h2
+          sx={{
+            variant: "styles.text.leistungenubheading",
+            fontWeight: "300",
+          }}
+        >
+          Stellen Sie günstig gelegene Zustellorte zur Verfügung, um Ihre
+          Umsätze zu steigern.
+        </h2>
+        {/* <h1 sx={{ variant: "styles.text.postheading" }}>Das Unternehmen</h1>
         <h2
           sx={{
             variant: "styles.text.leistungenubheading",
@@ -53,7 +63,7 @@ export default function Kontakt() {
           }}
         >
           Mehr über uns
-        </h2>
+        </h2> */}
         <Paragraph sx={{ variant: "styles.text.textbody" }}>
           Wir agieren über die Grenzen Bayerns und Deutschlands hinaus, sind
           auch in Europa vielseitiger Komplettanbieter für Transport, Logistik

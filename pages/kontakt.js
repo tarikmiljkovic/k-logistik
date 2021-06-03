@@ -49,49 +49,37 @@ export default function Kontakt() {
   return (
     <Box>
       <Nav />
-      <Container sx={{ px: [4,4,4]}}>
-        <h1 sx={{ variant: "styles.text.postheading" }}>
-          Sendungsverfolgungsleistungen
-        </h1>
+      <Container sx={{ px: [4, 4, 4] }}>
+        <h1 sx={{ variant: "styles.text.postheading" }}>Kontakt</h1>
         <h2
           sx={{
             variant: "styles.text.leistungenubheading",
             fontWeight: "300",
           }}
         >
-          Stellen Sie günstig gelegene Zustellorte zur Verfügung, um Ihre
-          Umsätze zu steigern.
+          Hier haben Sie moglichkeit uns zu erreichen.
         </h2>
-        <Paragraph sx={{ variant: "styles.text.textbody" }}>
-          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Omnis non
-          nostrum quibusdam exercitationem eum tempora molestias, placeat quo
-          cumque ad aut voluptatem expedita, consequuntur labore enim magnam
-          quas accusamus quam!Lorem ipsum, dolor sit amet consectetur
-          adipisicing elit. Omnis non nostrum quibusdam exercitationem eum
-          tempora molestias, placeat quo cumque ad aut voluptatem expedita,
-          consequuntur labore enim magnam quas accusamus quam! Lorem ipsum,
-          dolor sit amet consectetur adipisicing elit. Omnis non nostrum
-          quibusdam exercitationem eum tempora molestias, placeat quo cumque ad
-          aut voluptatem expedita, consequuntur labore enim magnam quas
-          accusamus quam! Lorem ipsum, dolor sit amet consectetur adipisicing
-          elit. Omnis non nostrum quibusdam exercitationem eum tempora
-          molestias, placeat quo cumque ad aut voluptatem expedita, consequuntur
-          labore enim magnam quas accusamus quam! Lorem ipsum, dolor sit amet
-          consectetur adipisicing elit. Omnis non nostrum quibusdam
-          exercitationem eum tempora molestias, placeat quo cumque ad aut
-          voluptatem expedita, consequuntur labore enim magnam quas accusamus
-          quam! Lorem ipsum, dolor sit amet consectetur adipisicing elit. Omnis
-          non nostrum quibusdam exercitationem eum tempora molestias, placeat
-          quo cumque ad aut voluptatem expedita, consequuntur labore enim magnam
-          quas accusamus quam! Lorem ipsum, dolor sit amet consectetur
-          adipisicing elit. Omnis non nostrum quibusdam exercitationem eum
-          tempora molestias, placeat quo cumque ad aut voluptatem expedita,
-          consequuntur labore enim magnam quas accusamus quam! Lorem ipsum,
-          dolor sit amet consectetur adipisicing elit. Omnis non nostrum
-          quibusdam exercitationem eum tempora molestias, placeat quo cumque ad
-          aut voluptatem expedita, consequuntur labore enim magnam quas
-          accusamus quam!
-        </Paragraph>
+        <Text sx={{ variant: "styles.text.textbody" }}>
+          Freisinger Landstrassse Munchen
+          <div>
+            tel:{" "}
+            <Link href="tel:">
+              <a>+496705558220</a>
+            </Link>
+          </div>
+          <div>
+            fax:{" "}
+            <Link href="">
+              <a>+496705558220</a>
+            </Link>
+          </div>
+          <div>
+            mail:{" "}
+            <Link href="mailto:izet@karajic.de">
+              <a>izet@karajic.de</a>
+            </Link>
+          </div>
+        </Text>
         <Service />
         {/* leistungen={leistungen} */}
         <br />
