@@ -12,7 +12,7 @@ export default function App({ Component, pageProps }) {
     <ThemeProvider theme={theme}>
       <div>
         <Head>
-          <title>Karajic</title>
+          <title>Karajic Transport</title>
         </Head>
         <MainProvider>
           <Alert />

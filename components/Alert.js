@@ -26,7 +26,7 @@ export default function MyAlert() {
           >
             <Flex sx={{ flex: "0 1 auto" }}>
               <MdPhone sx={{ height: "100%" }} />
-              <Link href=''>
+              <Link href="tel:+4915203468634">
                 <a
                   href="tel:+4915203468634"
                   sx={{ variant: "styles.alertnavlink" }}
@@ -37,7 +37,7 @@ export default function MyAlert() {
             </Flex>
             <Flex>
               <MdMailOutline sx={{ height: "100%" }} />
-              <Link href=''>
+              <Link href="mailto:info@karajic.de">
                 <a
                   href="mailto:info@karajic.de"
                   sx={{ variant: "styles.alertnavlink" }}
