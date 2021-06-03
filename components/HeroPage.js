@@ -70,13 +70,13 @@ export default function HeroPage() {
           <Heading
             as="h1"
             sx={{
-              fontSize: 38,
+              fontSize: 36,
               letterSpacing: -1,
               wordWrap: "break-word",
               mt: 100,
-              mb: 3,
+
               backgroundColor: "#0B2867",
-              py: 3,
+              p: 2,
               display: "inline-block",
             }}
           >
