@@ -64,19 +64,19 @@ export default function Kontakt() {
           <div>
             tel:{" "}
             <Link href="tel:">
-              <a>+496705558220</a>
+              <a sx={{ variant: "styles.navlink"}}>+496705558220</a>
             </Link>
           </div>
           <div>
             fax:{" "}
             <Link href="">
-              <a>+496705558220</a>
+              <a sx={{ variant: "styles.navlink"}}>+496705558220</a>
             </Link>
           </div>
           <div>
             mail:{" "}
             <Link href="mailto:izet@karajic.de">
-              <a>izet@karajic.de</a>
+              <a sx={{ variant: "styles.navlink"}}>izet@karajic.de</a>
             </Link>
           </div>
         </Text>
