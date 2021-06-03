@@ -36,7 +36,7 @@ export default function HeroPage() {
         mb: 60,
         position: "relative",
         verticalAlign: "middle",
-        backgroundImage: `url(${"static/maci.jpg"})`,
+        backgroundImage: `url(${"static/maci.JPG"})`,
         objectFit: "cover",
         objectPosition: "top center",
         backgroundRepeat: "no-repeat",
