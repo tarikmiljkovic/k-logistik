@@ -44,15 +44,14 @@ export default function Kontakt() {
     <Box>
       <Nav />
       <Container sx={{ px: [4, 4, 4] }}>
-        <h1 sx={{ variant: "styles.text.postheading" }}>Mehr über uns</h1>
+        <h1 sx={{ variant: "styles.text.postheading" }}>Das Unternehmen</h1>
         <h2
           sx={{
             variant: "styles.text.leistungenubheading",
             fontWeight: "300",
           }}
         >
-          Stellen Sie günstig gelegene Zustellorte zur Verfügung, um Ihre
-          Umsätze zu steigern.
+          Mehr über uns.
         </h2>
         {/* <h1 sx={{ variant: "styles.text.postheading" }}>Das Unternehmen</h1>
         <h2
