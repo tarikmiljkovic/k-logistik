@@ -147,7 +147,8 @@ const theme = {
       color: "#ffffff",
       alignSelf: "center",
       ml: [0, 3, 3],
-      width: ["100%", "auto", "auto"],
+      mr: [3, 0, 0],
+      width: ["auto", "auto", "auto"],
       "&:hover": {
         cursor: "pointer",
         textDecoration: "underline",
