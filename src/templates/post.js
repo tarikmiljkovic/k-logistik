@@ -25,7 +25,7 @@ export default function Post({children,frontMatter}){
         <div>{children}</div>
         <p>
           <Link href="/">
-            <a>Back</a>
+            <a>Zurück auf der Hauptseite</a>
           </Link>
         </p>
       </Container>

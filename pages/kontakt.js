@@ -3,7 +3,7 @@
 import Head from "next/head";
 import Link from "next/link";
 // import Image from 'next/image'
-
+import {useEffect} from 'react';
 import { useContext } from "react";
 import { MainContext } from "../contexts/MainContext";
 
@@ -35,6 +35,16 @@ export default function Kontakt() {
 
   let { primaryNav, setPrimaryNav } = useContext(MainContext);
 
+  useEffect(() => {
+    setPrimaryNav(false);
+  });
+
+  console.log(primaryNav);
+
+  // useEffect(() => {
+  //   setItems(mycontext.users);
+  // }, [mycontext.users]);
+
   primaryNav = false;
   return (
     <Box>
@@ -46,7 +56,6 @@ export default function Kontakt() {
         <h2
           sx={{
             variant: "styles.text.leistungenubheading",
-
             fontWeight: "300",
           }}
         >

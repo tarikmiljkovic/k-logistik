@@ -4,7 +4,8 @@ import Head from "next/head";
 import Link from "next/link";
 // import Image from 'next/image'
 
-import { useContext } from "react";
+
+import { useEffect, useContext } from "react";
 import { MainContext } from "../contexts/MainContext";
 
 import {
@@ -32,9 +33,13 @@ import Feature from "../components/Feature";
 import Service from "../components/Service";
 
 export default function Kontakt() {
+
   let { primaryNav, setPrimaryNav } = useContext(MainContext);
 
-  primaryNav = false;
+  useEffect(() => {
+    setPrimaryNav(false);
+  });
+
   return (
     <Box>
       <Nav />

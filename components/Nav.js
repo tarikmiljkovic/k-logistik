@@ -73,7 +73,7 @@ export default function Nav() {
                   }}
                   sx={{
                     variant: "styles.headnavlink",
-                    color: `${props.primaryNav == true ? "white" : "black"}`,
+                    color: `${props.primaryNav == true ? "white" : "#0B2867"}`,
                   }}
                 >
                   Das Unternehmen
@@ -86,7 +86,7 @@ export default function Nav() {
                   }}
                   sx={{
                     variant: "styles.headnavlink",
-                    color: `${props.primaryNav == true ? "white" : "black"}`,
+                    color: `${props.primaryNav == true ? "white" : "#0B2867"}`,
                   }}
                 >
                   Kontakt

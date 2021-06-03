@@ -95,6 +95,7 @@ const theme = {
 
   links: {
     primary: {
+      color: "#0B2867",
       "&:hover": {
         cursor: "pointer",
       },
@@ -139,10 +140,10 @@ const theme = {
     },
 
     navlink: {
-      textDecoration: "underline",
-      color: "black",
+      color: "#0B2867",
       "&:hover": {
         cursor: "pointer",
+        textDecoration: "underline",
       },
     },
   },

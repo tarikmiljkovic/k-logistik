@@ -29,11 +29,11 @@ export default function Footer() {
           variant: "styles.footer",
         }}
       >
-        <Link href="/kontakt">
+        <Link href="/unternehmen">
           <ThemeLink to="/" sx={{ variant: "styles.navlink", p: 2 }} onClick={() => {
                       setPrimaryNav(false);
                     }}>
-            Services
+            Das Unternehmen
           </ThemeLink>
         </Link>
 
@@ -41,7 +41,7 @@ export default function Footer() {
           <ThemeLink to="/" sx={{ variant: "styles.navlink", p: 2 }} onClick={() => {
                       setPrimaryNav(false);
                     }}>
-            Services
+            Kontakt
           </ThemeLink>
         </Link>
 

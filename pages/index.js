@@ -31,6 +31,9 @@ import {
 } from "theme-ui";
 
 
+import {useEffect, useContext} from 'react';
+import { MainContext } from "../contexts/MainContext";
+
 import HeroPage from "../components/HeroPage";
 import Footer from "../components/Footer";
 import Feature from '../components/Feature';
@@ -38,6 +41,12 @@ import News from "../components/News";
 import Service from "../components/Service";
 
 export default function Home({ leistungen }) {
+
+    let { primaryNav, setPrimaryNav } = useContext(MainContext);
+
+    useEffect(() => {
+      setPrimaryNav(true);
+    });
 
   return (
     <Box>

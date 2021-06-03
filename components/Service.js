@@ -177,7 +177,7 @@ export default function Service({leistungen}) {
 
   return (
     <div>
-      <h2>Leistungen</h2>
+      <h2>Services</h2>
 
       <Grid
         gap={3}

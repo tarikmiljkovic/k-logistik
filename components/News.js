@@ -67,7 +67,7 @@ export default function News({ leistungen }) {
 
   return (
     <div>
-      <h2>Leistungen</h2>
+      <h2>Neuigkeiten</h2>
 
       <Grid
         gap={3}
