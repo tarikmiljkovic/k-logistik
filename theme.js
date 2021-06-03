@@ -13,6 +13,20 @@ const theme = {
     muted: "#f6f6f6",
   },
 
+  alerts: {
+    primary: {
+      color: "background",
+      bg: "primary",
+      borderRadius: "0",
+      px: [4, 4, 4],
+      py: [2, 2, 2],
+    },
+    muted: {
+      color: "text",
+      bg: "muted",
+    },
+  },
+
   breakpoints: ["40em", "52em", "64em"],
   space: [0, 4, 8, 16, 32, 64, 128, 256, 512],
 
@@ -142,6 +156,15 @@ const theme = {
 
     navlink: {
       color: "#0B2867",
+      "&:hover": {
+        cursor: "pointer",
+        textDecoration: "underline",
+      },
+    },
+
+    alertnavlink: {
+      color: "white",
+      fontWeight: 400,
       "&:hover": {
         cursor: "pointer",
         textDecoration: "underline",

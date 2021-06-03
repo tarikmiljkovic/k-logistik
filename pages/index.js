@@ -40,6 +40,7 @@ import Feature from '../components/Feature';
 import News from "../components/News";
 import Service from "../components/Service";
 
+
 export default function Home({ leistungen }) {
 
     let { primaryNav, setPrimaryNav } = useContext(MainContext);
@@ -49,18 +50,46 @@ export default function Home({ leistungen }) {
     });
 
   return (
-    <Box>
+    <>
       <Head>
         <title>Karajic</title>
       </Head>
-      <HeroPage />
-      <Container sx={{ px: [4,4,4]}}>
-        <Feature />
-        <News leistungen={leistungen} />
-        <Service leistungen={leistungen} />
-        <Footer />
+
+      <Alert>
+        <Container sx={{ px: [0, 4, 4] }}>
+          <Flex sx={{ justifyContent: "space-between", flexWrap: 'wrap' }}>
+            <Box sx={{ flex: "0 1 auto" }}>
+              <div>
+                tel:{" "}
+                <Link href="tel:+4915203468634">
+                  <a sx={{ variant: "styles.alertnavlink" }}>+49 15203468634</a>
+                </Link>
+              </div>
+            </Box>
+            <Box>
+              <div>
+                {" "}
+                mail:
+                <Link href="mailto:info@karajic.de">
+                  <a sx={{ variant: "styles.alertnavlink" }}>info@karajic.de</a>
+                </Link>
+              </div>
+            </Box>
+
+          </Flex>
+        </Container>
+      </Alert>
+
+      <Container>
+        <HeroPage />
+        <Container sx={{ px: [4, 4, 4] }}>
+          <Feature />
+          <News leistungen={leistungen} />
+          <Service leistungen={leistungen} />
+          <Footer />
+        </Container>
       </Container>
-    </Box>
+    </>
   );
 }
 
