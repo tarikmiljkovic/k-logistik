@@ -4,7 +4,7 @@ import Link from 'next/link'
 import Logo from "../../components/Logo";
 import Nav from '../../components/Nav';
 
-import { useContext } from "react";
+import { useContext, useEffect } from "react";
 import { MainContext } from "../../contexts/MainContext";
 
 
@@ -14,7 +14,9 @@ export default function Post({children,frontMatter}){
 
     let { primaryNav, setPrimaryNav } = useContext(MainContext);
 
-    console.log(primaryNav);
+      useEffect(() => {
+        setPrimaryNav(false);
+      });
 
 
   return (
