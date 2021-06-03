@@ -4,6 +4,7 @@ import Head from "next/head";
 import Link from 'next/link'
 // import Image from 'next/image'
 
+
 import { promises as fs } from "fs";
 import path from "path";
 import grayMatter from "gray-matter";
@@ -30,26 +31,24 @@ import {
 } from "theme-ui";
 
 
-import HeadPage from "../components/HeadPage";
+import HeroPage from "../components/HeroPage";
 import Footer from "../components/Footer";
 import Feature from '../components/Feature';
 import News from "../components/News";
 import Service from "../components/Service";
 
-export default function Home({ posts }) {
+export default function Home({ leistungen }) {
 
-  // let { siteObject, setSiteObject } = useContext(MainContext);
-  // setSiteObject(posts);
-  // console.log(posts);
-
-  // console.log('posts',posts);
   return (
     <Box>
-      <HeadPage />
+      <Head>
+        <title>Next.js Blog Example with</title>
+      </Head>
+      <HeroPage />
       <Container px={4}>
         <Feature />
-        <News posts={posts} />
-        <Service posts={posts} />
+        <News leistungen={leistungen} />
+        <Service leistungen={leistungen} />
         <Footer />
       </Container>
     </Box>
@@ -57,13 +56,13 @@ export default function Home({ posts }) {
 }
 
 export async function getStaticProps() {
-  const postsDirectory = path.join(process.cwd(), "pages/posts");
+  const leistungenDirectory = path.join(process.cwd(), "pages/leistungen");
 
-  const filenames = await fs.readdir(postsDirectory);
+  const filenames = await fs.readdir(leistungenDirectory);
 
   const files = await Promise.all(
     filenames.map(async (filename) => {
-      const filePath = path.join(postsDirectory, filename);
+      const filePath = path.join(leistungenDirectory, filename);
 
       const content = await fs.readFile(filePath, "utf8");
 
@@ -76,27 +75,21 @@ export async function getStaticProps() {
       };
     })
   );
-    // console.log(JSON.parse(JSON.stringify(files)));
 
-
-
-    // files = JSON.parse(JSON.stringify(files));
-  // title: file.matter.data.title
-
-  const posts = files.map((file) => {
+  const leistungen = files.map((file) => {
     return {
-      path: `/posts/${file.filename.replace(".mdx", "")}`,
+      path: `/leistungen/${file.filename.replace(".mdx", "")}`,
       title: file.matter.data.title,
       desc: file.matter.data.desc,
       image: file.matter.data.image,
     };
   });
 
-  console.log(typeof posts);
+  console.log(typeof leistungen);
 
   return {
     props: {
-      posts,
+      leistungen,
     },
   };
 }

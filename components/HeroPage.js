@@ -27,7 +27,7 @@ import Nav from "./Nav";
 
 // backgroundImage: "url(" + `${require("./path-to-the-image")}` + ")",
 
-export default function HeadPage() {
+export default function HeroPage() {
   return (
     <Box
       sx={{

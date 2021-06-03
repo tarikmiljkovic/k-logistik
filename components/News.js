@@ -3,6 +3,7 @@
 import Head from "next/head";
 import Link from "next/link";
 
+import React from "react";
 import { useContext } from "react";
 import { MainContext } from "../contexts/MainContext";
 
@@ -59,8 +60,11 @@ import {
   MdPublic,
 } from "react-icons/md";
 
-export default function News({ posts }) {
+export default function News({ leistungen }) {
+
+
   let { primaryNav, setPrimaryNav } = useContext(MainContext);
+
   return (
     <div>
       <h2>Leistungen</h2>
@@ -75,12 +79,16 @@ export default function News({ posts }) {
           ],
         }}
       >
-        {posts.map((post) => {
+        {leistungen.map((post) => {
           return (
-
-                <Card key={post.path} bg="muted" sx={{ overflow: "hidden" }}>
-                  <Link href={post.path}>
-              <a sx={{ variant: "links.primary" }}>
+            <Card key={post.path} bg="muted" sx={{ overflow: "hidden" }}>
+              <Link href={post.path}>
+                <a
+                  sx={{ variant: "links.primary" }}
+                  onClick={() => {
+                    setPrimaryNav(false);
+                  }}
+                >
                   <Box sx={{ px: [15, 30], py: [30, 30] }}>
                     <Heading as="h3" variant="bottom">
                       {post.title}
@@ -103,9 +111,8 @@ export default function News({ posts }) {
                       src={`${post.image}`}
                     />
                   </Box>
-
-              </a>
-            </Link>
+                </a>
+              </Link>
             </Card>
           );
         })}

@@ -123,7 +123,7 @@ const theme = {
         my: 0,
         wordWrap: "break-word",
       },
-      postsubheading: {
+      leistungenubheading: {
         fontFamily: "heading",
         fontWeight: "heading",
         lineHeight: "heading",

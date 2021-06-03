@@ -163,15 +163,15 @@ var services = [
 ];
 
 
-export default function Service({posts}) {
+export default function Service({leistungen}) {
 
   let { primaryNav, setPrimaryNav } = useContext(MainContext);
 
   // primaryNav = false;
 
-  // console.log(posts);
+  // console.log(leistungen);
 
-  // console.log(typeof posts);
+  // console.log(typeof leistungen);
 
 
 
@@ -192,6 +192,7 @@ export default function Service({posts}) {
       >
         {services.map((service) => (
           <Card
+          key={service.name}
             sx={{
               maxWidth: "100%",
               backgroundColor: "#EAEBEC",

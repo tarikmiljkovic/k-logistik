@@ -42,7 +42,7 @@ export default function Kontakt() {
         {/* <h1 sx={{ variant: "styles.text.postheading" }}>Das Unternehmen</h1> */}
         <h2
           sx={{
-            variant: "styles.text.postsubheading",
+            variant: "styles.text.leistungenubheading",
 
             fontWeight: "300",
           }}
@@ -60,7 +60,7 @@ export default function Kontakt() {
 
         {/* <h2
           sx={{
-            variant: "styles.text.postsubheading",
+            variant: "styles.text.leistungenubheading",
 
             fontWeight: "300",
           }}
@@ -71,7 +71,7 @@ export default function Kontakt() {
           Das Firma wurde im Jahr 2015 gegrundet.
         </Paragraph> */}
         <Service />
-        {/* posts={posts} */}
+        {/* leistungen={leistungen} */}
         <br />
         <Footer />
       </Container>

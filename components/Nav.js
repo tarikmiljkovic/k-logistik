@@ -51,7 +51,7 @@ export default function Nav() {
                     >
                       <Image
                         src={`${
-                          primaryNav == true ? `logo-white.svg` : `logo.svg`
+                          primaryNav == true ? `/logo-white.svg` : `/logo.svg`
                         }`}
                         variant="avatar"
                         sx={{ height: ["30px", "30px", "30px"] }}
